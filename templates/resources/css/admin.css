@@ -1,0 +1,47 @@
+/* @import './common/fonts.css';
+
+@import './admin/common/base.css';
+
+.wp-block-post-content {
+  @nested-import './common/reset.css';
+  @nested-import './common/normalize.css';
+  @nested-import './common/tools.css';
+
+  @nested-import './components/modal.css';
+  @nested-import './components/lang.css';
+  @nested-import './components/link.css';
+  @nested-import './components/embla.css';
+
+  @nested-import './blocks/main/first/style.css';
+  @nested-import './blocks/main/about/style.css';
+  @nested-import './blocks/main/potential/style.css';
+  @nested-import './blocks/main/services/style.css';
+  @nested-import './blocks/main/help/style.css';
+  @nested-import './blocks/main/we/style.css';
+  @nested-import './blocks/main/building/style.css';
+  @nested-import './blocks/main/blog/style.css';
+
+  @nested-import './blocks/services/first/style.css';
+
+  @nested-import './blocks/about/first/style.css';
+  @nested-import './blocks/about/desc/style.css';
+  @nested-import './blocks/about/quote/style.css';
+
+  @nested-import './blocks/calendar/first/style.css';
+  @nested-import './blocks/calendar/we/style.css';
+
+  @nested-import './blocks/brands/default/style.css';
+
+  @nested-import './blocks/brand/first/style.css';
+  @nested-import './blocks/brand/images/style.css';
+  @nested-import './blocks/brand/interesting/style.css';
+
+  @nested-import './blocks/post/first/style.css';
+  @nested-import './blocks/post/second/style.css';
+  @nested-import './blocks/post/desc/style.css';
+
+  @nested-import './blocks/contacts/first/style.css';
+  @nested-import './blocks/contacts/second/style.css';
+
+  @nested-import './blocks/tech/first/style.css';
+} */

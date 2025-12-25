@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  color: var(--color-dark-brown);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.wpcf7-not-valid-tip {
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 10px 0 0;
+  font-size: 15px;
+  border-width: 1px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
+
+.p {
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.section {
+  position: relative;
+  padding-top: 100px;
+
+  &__title {
+    font-size: fluid-type(360px, 640px, 18px, 24px);
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: var(--color-dark-brown);
+
+    &--white {
+      color: var(--color-cream);
+    }
+  }
+}
+
+.pagination {
+  margin-top: 34px;
+  font: 17;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .disabled {
+    path {
+      stroke: var(--color-khaki-light);
+    }
+  }
+
+  .current {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: var(--color-dark-brown);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-taupe);
+  }
+
+  li {
+    display: flex;
+
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &:first-child  {
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding-top: 51px;
+  }
+
+  .section {
+    padding-top: 120px;
+
+    &__title {
+      line-height: 105%;
+    }
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .pagination {
+    ul {
+      gap: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-top: 130px;
+
+    &__title {
+      font-size: fluid-type(1024px, 1600px, 24px, 28px);
+      line-height: fluid-type(1024px, 1600px, 105%, 115%);
+    }
+  }
+
+  .pagination {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 150px;
+  }
+}

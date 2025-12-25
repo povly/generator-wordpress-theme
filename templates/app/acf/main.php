@@ -85,4 +85,3 @@ add_filter('block_categories_all', '{{FUNCTION}}_acf_block_categories');
 
 require_once {{CONSTANT}}_PATH . '/app/acf/options.php';
 require_once {{CONSTANT}}_PATH . '/app/acf/themes.php';
-require_once {{CONSTANT}}_PATH . '/app/acf/brands.php';

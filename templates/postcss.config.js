@@ -15,7 +15,7 @@ export default {
     'postcss-simple-vars': {},
     autoprefixer: {},
     cssnano: {
-      preset: ['default', { calc: false }],
+      preset: ['default', {calc: false}],
     },
   },
 };

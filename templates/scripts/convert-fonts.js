@@ -6,7 +6,7 @@ import {
   statSync,
   readFileSync,
 } from 'fs';
-import { resolve, extname, basename, join, relative, dirname } from 'path';
+import {resolve, extname, basename, join, relative, dirname} from 'path';
 import ttf2woff from 'ttf2woff';
 import ttf2woff2 from 'ttf2woff2';
 
@@ -15,7 +15,7 @@ const OUTPUT_DIR = 'public/fonts';
 
 // Создаем output директорию если не существует
 if (!existsSync(OUTPUT_DIR)) {
-  mkdirSync(OUTPUT_DIR, { recursive: true });
+  mkdirSync(OUTPUT_DIR, {recursive: true});
 }
 
 // Рекурсивный поиск шрифтов с сохранением структуры
@@ -52,7 +52,7 @@ function convertFont(inputPath, outputBaseDir) {
 
   // Создаем выходную директорию если не существует
   if (!existsSync(outputDir)) {
-    mkdirSync(outputDir, { recursive: true });
+    mkdirSync(outputDir, {recursive: true});
   }
 
   try {
@@ -121,7 +121,7 @@ function generateFontCSS(convertedFonts) {
 function convertFonts() {
   if (!existsSync(FONTS_DIR)) {
     console.log('📁 Creating fonts directory...');
-    mkdirSync(FONTS_DIR, { recursive: true });
+    mkdirSync(FONTS_DIR, {recursive: true});
     console.log('Put your .ttf or .otf files in src/fonts/ directory');
     return;
   }

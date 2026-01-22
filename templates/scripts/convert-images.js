@@ -1,8 +1,8 @@
-import { readdirSync, existsSync, mkdirSync, statSync } from 'fs';
-import { join, extname, basename, dirname, relative } from 'path';
+import {readdirSync, existsSync, mkdirSync, statSync} from 'fs';
+import {join, extname, basename, dirname, relative} from 'path';
 import sharp from 'sharp';
-import { fileURLToPath } from 'url';
-import { dirname as pathDirname } from 'path';
+import {fileURLToPath} from 'url';
+import {dirname as pathDirname} from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = pathDirname(__filename);
@@ -25,7 +25,7 @@ const targetPath = args[0]; // путь к папке или файлу
 
 async function ensureDir(dirPath) {
   if (!existsSync(dirPath)) {
-    mkdirSync(dirPath, { recursive: true });
+    mkdirSync(dirPath, {recursive: true});
   }
 }
 

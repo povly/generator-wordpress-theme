@@ -24,6 +24,6 @@
 
   @endwhile
 
-{{--  @include('blocks.soon')--}}
+  {{--  @include('blocks.soon')--}}
 
 @endsection

@@ -11,8 +11,9 @@
   overflow: hidden;
   overflow-y: auto;
   transition: 0.3s;
-  background: rgba(70, 71, 71, 0.4);
+  background: rgba(3, 4, 5, 0.3);
   cursor: pointer;
+  position: fixed;
 
   &.active {
     opacity: 1;
@@ -37,15 +38,22 @@
   }
 
   &__close {
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 10px;
     position: absolute;
     z-index: 5;
+
+    svg {
+      width: 30px;
+    }
   }
 
   &__content {
-    background: #f5f5f5;
+    background: var(--color-white);
+    padding: 24px 10px 30px;
     position: relative;
+    max-width: 320px;
+    margin: 50px auto;
     cursor: default;
   }
 }

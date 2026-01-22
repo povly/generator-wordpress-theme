@@ -1,6 +1,6 @@
 <?php
 // Функция для создания страницы опций ACF
-function create_acf_options_page() {
+function {{FUNCTION}}_create_acf_options_page() {
     if (function_exists('acf_add_options_page')) {
         acf_add_options_page(array(
             'page_title' => 'Настройки темы', // Заголовок страницы
@@ -12,10 +12,10 @@ function create_acf_options_page() {
         ));
     }
 }
-add_action('acf/init', 'create_acf_options_page');
+add_action('acf/init', '{{FUNCTION}}_create_acf_options_page');
 
 // Функция для создания вкладок и полей на странице опций ACF
-function add_acf_options_fields() {
+function {{FUNCTION}}_add_acf_options_fields() {
     if (function_exists('acf_add_local_field_group')) {
 
         // Группа полей для вкладки "Общие"
@@ -197,4 +197,4 @@ function add_acf_options_fields() {
         ));
     }
 }
-add_action('acf/init', 'add_acf_options_fields');
+add_action('acf/init', '{{FUNCTION}}_add_acf_options_fields');

@@ -1,15 +1,11 @@
 @import './common/fonts.css';
 @import './common/reset.css';
-@import './common/normalize.css';
+@import 'normalize.css';
 @import './common/base.css';
 @import './common/tools.css';
 
-@import './components/form.css';
+@import './components/swiper.css';
 @import './components/modal.css';
-@import './components/lang.css';
-@import './components/link.css';
 
 @import './partials/header.css';
 @import './partials/footer.css';
-
-@import './modal/menu.css';

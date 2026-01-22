@@ -7,8 +7,8 @@ import {
   readFileSync,
   writeFileSync,
 } from 'fs';
-import { join, extname, dirname, relative, basename } from 'path';
-import { optimize } from 'svgo';
+import {join, extname, dirname, relative, basename} from 'path';
+import {optimize} from 'svgo';
 
 // Конфигурация SVGO для оптимизации SVG
 const svgoConfig = {
@@ -56,7 +56,7 @@ const targetPath = args[0]; // путь к папке или файлу
 
 async function ensureDir(dirPath) {
   if (!existsSync(dirPath)) {
-    mkdirSync(dirPath, { recursive: true });
+    mkdirSync(dirPath, {recursive: true});
   }
 }
 

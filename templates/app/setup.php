@@ -11,7 +11,7 @@ namespace App;
  *
  * @return void
  */
-add_action('after_setup_theme', function () {
+add_action('after_setup_theme', function (): void {
     /**
      * Disable full-site editing support.
      *
@@ -26,7 +26,6 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'menu_header' => __('Шапка', '{{TEXT_DOMAIN}}'),
-        'menu_footer' => __('Подвал', '{{TEXT_DOMAIN}}'),
     ]);
 
     /**
@@ -49,7 +48,6 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
-
 
     /**
      * Enable responsive embed support.
@@ -74,3 +72,5 @@ add_action('after_setup_theme', function () {
     ]);
 }, 20);
 
+require_once {{CONSTANT}}_PATH.'/app/cf7/validation.php';
+require_once {{CONSTANT}}_PATH.'/app/yoast/breadcrumbs.php';

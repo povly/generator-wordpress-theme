@@ -23,8 +23,8 @@ use Roots\Acorn\Application;
 |
 */
 
-if (!file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
-    wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
+if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
+    wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', '{{TEXT_DOMAIN}}'));
 }
 
 require $composer;
@@ -60,12 +60,11 @@ Application::configure()
 */
 
 collect(['setup', 'inc/main', 'acf/main'])
-    ->each(function ($file) {
-        if (!locate_template($file = "app/{$file}.php", true, true)) {
+    ->each(function ($file): void {
+        if (! locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(
                 /* translators: %s is replaced with the relative file path */
-                sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
+                sprintf(__('Error locating <code>%s</code> for inclusion.', '{{TEXT_DOMAIN}}'), $file)
             );
         }
     });
-

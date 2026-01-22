@@ -1,14 +1,15 @@
 @font-face {
-  font-family: 'Jost';
-  src: url('@fonts/jost/Jost-Light.woff2') format('woff2'),
-       url('@fonts/jost/Jost-Light.woff') format('woff');
-  font-weight: 300;
+  font-family: 'Manrope';
+  src: url('@fonts/manrope/Manrope-Regular.woff2') format('woff2'),
+  url('@fonts/manrope/Manrope-Regular.woff') format('woff');
+  font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Jost';
-  src: url('@fonts/jost/Jost-Regular.woff2') format('woff2'),
-       url('@fonts/jost/Jost-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Manrope';
+  src: url('@fonts/manrope/Manrope-Bold.woff2') format('woff2'),
+  url('@fonts/manrope/Manrope-Bold.woff') format('woff');
+  font-weight: 700;
   font-display: swap;
 }
